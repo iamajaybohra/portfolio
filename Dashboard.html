@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Student Section!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #mainhead
+            {
+                text-align: center;
+                padding-top:30px;
+                color:black;
+                padding: 20px;
+            }
+            #mainhead1{
+                text-align: right;
+                margin-right: 20%;
+                padding-top:30px;
+                color:black;
+                padding: 20px;
+            }
+            .avatar{
+                margin-left: 20%;
+                display: inline;
+                float:left;
+            }
+            textarea{
+                text-align: center;
+                color:black;
+                padding: 5px;
+            }
+            #div1{
+                display: inline;
+                border:black;
+                float: left;
+                margin-left: 10%;
+                margin-right: 30%;
+
+            }
+            #div2{
+                display: inline;
+            }
+                        
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow:hidden;
+                
+            }
+
+            li {
+            float: left;
+            }
+
+            li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-decoration:none;
+            }
+
+            li a:hover {
+            background-color:lightgrey;
+            }
+        </style>
+        <script>
+            myfunc()
+            {
+                document.getElementById("attdiv").style.width = "250px";
+            }
+        </script>
+    </head>
+    <body background="college-ground.jpg">
+        <div id="mainhead"><h1><b>STUDENT SECTION</b></h1></div>
+        <nav id="mynav">
+            <ul>
+                <li><a href="LOGIN_STUDENT.html">GO BACK</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div id="mainhead1">
+            <div class="avatar">
+                <img src="contact_icon.png" width="190" height="190">
+            </div>
+            STUDENT NAME <br>
+            <textarea rows="1" cols="20" readonly style="padding: 5px;"></textarea>
+            <br><br>EMAIL ID <br>
+            <textarea rows="1" cols="30" readonly style="padding:5px;"></textarea>
+            <br><br>MOBILE NUMBER <br>
+            <textarea rows="1" cols="10" readonly style="padding:5px;"></textarea>
+            <hr>
+        </div> 
+        <div>
+            <div id="div1">
+              <legend>PERSONAL DETAILS</legend>
+              <p>
+                  FATHER'S NAME<br><textarea rows="1" cols="25" readonly></textarea>
+              </p>
+              <p>
+                  MOTHER'S NAME<br><textarea rows="1" cols="25" readonly></textarea>
+              </p>
+            </div>
+            <div id="div2">
+                <legend>ACADEMIC DETAILS</legend>
+                <p>
+                    FIRST YEAR RESULT<br><textarea rows="1" cols="25" readonly></textarea>
+                </p>
+                <p style="cursor:pointer" onclick="myfunc()">
+                    OVERALL ATTENDANCE<br>
+                    <div id="attdiv"></div>
+                </p>
+            </div>
+            <div id="div3"></div>
+        </div>
+
+    </body>
+</html>
