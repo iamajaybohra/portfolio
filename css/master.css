@@ -1,5 +1,54 @@
 
 
+  body,html{
+    display: flex;
+    height:100%;
+    margin:0;
+    width: 100%;
+    background-image: linear-gradient(to right, violet,orange);
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("../images/wood.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 20%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .icons{
+    display: flex;
+  }
+
+  i{
+    margin-right: 25px;
+  }
+  .content{
+    margin-left: 100px;
+  }
+  
   a {
     color: blue;/* set the text color to blue here */
     text-decoration: none; 
@@ -9,17 +58,18 @@
     color:red;/* set the text color to red here */
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
-
-
- 
-
+  img{
+    border-radius: 50%;
+    border:10px solid #E700EB;
+    width:150px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
   h2 {
-      color: #075AAB;
-      margin-bottom: 2.5rem;
-      margin-top: : 2.5rem;
-
-   
-   }
+      color:#E700EB;
+      font-family: MetaWebPro-Bold,sans-serif;
+      margin-top: 2.5rem;
+  }
 
   h3 {
     margin-bottom: 0;
@@ -39,10 +89,30 @@
     margin-bottom: 3rem;
     margin-top: 3rem;
   }
-
+  .image{
+    margin-left: 30px;
+  }
   /* this controls how the bullet points in the resume page looks */
   ul {
     display: table;
     margin: 0 auto;
     text-align: left;
+  }
+  button {
+    margin:5px;
+    background-color: #E700EB; /* Green */
+    border: 1px solid #E700EB;
+    padding: 10px 16px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 12px;
+  }
+
+  p{
+    font-family: MetaWebPro-Bold,sans-serif;
+      
   }
