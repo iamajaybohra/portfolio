@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+li{
+    text-align: center;
+    
+}
+li:hover{
+   opacity:0.5;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(248, 246, 245, 0.733);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: black;
+  border-left:inset;
+
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ul{
+  list-style-type: none;
+  overflow:hidden;
+}
+</style>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("kunal_btn").style.opacity = "0";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("kunal_btn").style.transition = "0.8s";
+    document.getElementById("kunal_btn").style.opacity = "1";
+  }
+  function myfunc(){
+    document.getElementById("notice").style.borderBottom = "1px solid grey";
+    document.getElementById("notice").style.paddingBottom = "5px";
+  }
+  </script>
+</head>
+<body background="college-ground.jpg">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="file:///D:/AUDIT/Dashboard.html">DASHBOARD</a>
+  <a href="#">CLUBS AND BOARDS</a>
+  <a href="file:///D:/AUDIT/login.html">LIBRARY MANAGEMENT</a>
+  <a href="#">COMPLAIN BOX</a>
+  <a href="#">SUGGESTION BOX</a>
+  <a href="LOST_AND_FOUND.html">LOST AND FOUND</a>
+</div>
+
+<h1 style="text-align: center;">ARMY INSTITUTE OF TECHNOLOGY</h1>
+<div>
+    <p style="text-align: center;">WELCOME TO THE STUDENT SECTION</p>
+</div>
+<span id="kunal_btn" style="font-size:30px;cursor:pointer;color: grey;" onclick="openNav()">&#9776;</span>
+<div  style="font-family:Verdana;cursor: pointer;" onclick="myfunc()">
+    <ul id="notice">
+        <p style="text-align: center;font-size: 40px;">UPCOMING EVENTS</p>
+        <li>TECHNICAL AAKRITI</li>
+        <li>AMETHYST</li>
+        <li>PACE</li>
+        <li>SOLUTIONS</li>
+    </ul>
+    <ul>
+        <p style="text-align: center;font-size: 40px;">IMPORTANT NOTICES</p>
+        <li>ALUMINI MEET ON 21 FEB</li>
+        <li>SCHORLASHIP</li>
+    </ul> 
+</div> 
+</body>
+</html> 
